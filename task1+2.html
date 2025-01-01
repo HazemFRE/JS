@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+</head>
+<body>
+
+
+
+    <!-- Task 1 -->
+
+<h3 id="myP" > Can I Help YOU</h3>
+
+<script>
+    let myElement = document.getElementById("myP");
+
+
+myElement.style.backgroundColor = "yellow";
+myElement.style.width = "350px";
+myElement.style.textAlign = "center";
+myElement.style.padding = "20px";
+myElement.style.border = "3px solid black";
+myElement.style.margin = "70px auto";
+
+myElement.addEventListener("mouseover", function (event) {
+    event.target.textContent = "Hello World !";
+         });
+
+myElement.addEventListener("mouseout", function (event) {
+            event.target.textContent = "Can I Help You !";
+        });
+</script>
+
+
+
+    <!-- Task 2 -->
+     
+
+<!-- 
+    <form action="">
+        <select name="" id="fontSelector">
+            <optgroup>
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Courier">Courier</option>
+            </optgroup>
+        </select>
+
+        <select name="" id="fontSize">
+            <optgroup>
+                <option value="10px">50px</option>
+                <option value="15px">20px</option>
+                <option value="20px">40px</option>
+                <option value="25px">10px</option>
+                <option value="30px">14px</option>
+            </optgroup>
+        </select>
+
+        <input id="it" name="style" type="checkbox" value="italic" />
+        <label for="it">Italic</label>
+
+        <input id="b" name="style" type="checkbox" value="bold" />
+        <label for="b">Bold</label>
+
+        <input id="ul" name="style" type="checkbox" value="underline" />
+        <label for="ul">Underline</label>
+        <br><br>
+
+        <textarea name="" id="write" cols="50" maxlength="50" rows="10"></textarea>
+    </form>
+
+    <script>
+
+
+        document.getElementById("fontSelector").addEventListener("change", function () {
+            myElement.style.fontFamily = this.value;
+        });
+
+        document.getElementById("fontSize").addEventListener("change", function () {
+            myElement.style.fontSize = this.value;
+        });
+
+        document.querySelectorAll('input[name="style"]').forEach(function (checkbox) {
+            checkbox.addEventListener("change", function () {
+                if (this.checked) {
+                    myElement.style[this.value] = this.value;
+                } else {
+                    myElement.style[this.value] = "";
+                }
+            });
+        }); -->
+    </script>
+</body>
+</html>
