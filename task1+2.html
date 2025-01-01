@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 2</title>
 </head>
+
 <body>
 
 
 
     <!-- Task 1 -->
 
-<h3 id="myP" > Can I Help YOU</h3>
+    <h3 id="myP"> Can I Help YOU</h3>
+    <style>
+        #myP {
+            background-color: yellow;
+            width: 350px;
+            text-align: center;
+            padding: 20px;
+            border: 3px solid black;
+            margin: 70px auto;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        let myElement = document.getElementById("myP");
 
-<script>
-    let myElement = document.getElementById("myP");
+        myElement.addEventListener("mouseover", function (event) {
+            event.target.textContent = "Hello World !";
+        });
 
-
-myElement.style.backgroundColor = "yellow";
-myElement.style.width = "350px";
-myElement.style.textAlign = "center";
-myElement.style.padding = "20px";
-myElement.style.border = "3px solid black";
-myElement.style.margin = "70px auto";
-
-myElement.addEventListener("mouseover", function (event) {
-    event.target.textContent = "Hello World !";
-         });
-
-myElement.addEventListener("mouseout", function (event) {
+        myElement.addEventListener("mouseout", function (event) {
             event.target.textContent = "Can I Help You !";
         });
-</script>
+
+    </script>
 
 
 
     <!-- Task 2 -->
-     
 
-<!-- 
+
+
     <form action="">
         <select name="" id="fontSelector">
             <optgroup>
@@ -92,7 +97,8 @@ myElement.addEventListener("mouseout", function (event) {
                     myElement.style[this.value] = "";
                 }
             });
-        }); -->
+        });
     </script>
 </body>
+
 </html>
